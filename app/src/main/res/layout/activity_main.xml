@@ -68,8 +68,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="textEnd" />
+                android:text="Pasteur Parking Garage"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -93,8 +94,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="textEnd" />
+                android:text="1650"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -118,8 +120,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="textEnd" />
+                android:text="5NRT490"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -143,8 +146,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="textEnd" />
+                android:text="Tue, Mar 10, 4:00 PM"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -180,8 +184,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="textEnd" />
+                android:text="$8.00"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -206,8 +211,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="textEnd" />
+                android:text="$8.00"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -218,7 +224,7 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+                android:layout_width="446dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingStart="10dp"
@@ -226,13 +232,78 @@
                 android:paddingBottom="5dp"
                 android:text="Do you have a validation code?" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/color"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="83dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/borderSecondary"
+                    android:text="REDEEM"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#1474d4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="textEnd" />
+                android:background="@drawable/custom_border">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Payment Type"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+
+                    android:id="@+id/imageView"
+                    android:layout_width="57dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/visacard" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
